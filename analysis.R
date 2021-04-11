@@ -3,7 +3,6 @@
 # Right join as zip
 library(tidyverse)
 library(class)
-library(tidytext)
 
 dt_cn <- read_csv("zhxs_1_hour_558_m.csv", col_names = c("packet_size"), col_types = cols(packet_size = col_integer()), comment = "#")
 
