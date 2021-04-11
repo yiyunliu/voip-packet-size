@@ -1,0 +1,1 @@
+rg -N 'Len=(\d+)' ma_1_hour.csv  --only-matching -r '$1' > ma
