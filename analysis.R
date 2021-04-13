@@ -24,7 +24,8 @@ build_3_gram <- function(dt0) {
     right_join(dt1 %>% mutate(id = row_number())) %>%
     right_join(dt2 %>% mutate(id = row_number())) %>%
     select(-id) %>%
-    unite(sizes, c("packet_size", "next_packet_size", "next_next_packet_size"))
+      unite(sizes, c("packet_size", "next_packet_size", "next_next_packet_size"))
+  dt3
 }
 
 split_packets <- function(dt, lang) {
